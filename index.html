@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +56,7 @@ section{position:relative;z-index:1;padding:5rem 5vw;}
 .exp-list{list-style:none;padding:0;}
 .exp-list li{font-size:0.88rem;color:var(--text2);line-height:1.7;padding-left:1.2rem;position:relative;margin-bottom:0.5rem;}
 .exp-list li::before{content:'▸';position:absolute;left:0;color:var(--accent);}
+.exp-grid{display:flex;flex-direction:column;gap:1.5rem;}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
 .skill-category{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.8rem;transition:border-color 0.3s,transform 0.3s;}
 .skill-category:hover{border-color:rgba(0,212,255,0.3);transform:translateY(-4px);}
@@ -224,7 +226,7 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
     <div class="hero-tag">Available for opportunities</div>
     <h1 class="hero-name">Arshu<br><span class="highlight">Sheerin H M</span></h1>
     <p class="hero-title">Entry-Level Data Analyst / Business Analyst</p>
-    <p class="hero-desc">Turning raw data into actionable insights using SQL, Power BI, Python & Excel. Built 3 end-to-end analytics projects across government, retail & HR domains.</p>
+    <p class="hero-desc">Turning raw data into actionable insights using SQL, Power BI, Python &amp; Excel — and translating them into clear business requirements, KPIs, and stakeholder reporting. Built 3 end-to-end analytics projects and completed 3 internships across government, retail, telecom &amp; HR domains.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View My Projects</a>
       <a href="mailto:arshusheerin05@gmail.com" class="btn-secondary">Get In Touch</a>
@@ -232,7 +234,8 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
   </div>
   <div class="hero-stats">
     <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Projects</div></div>
-    <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">Certifications</div></div>
+    <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Internships</div></div>
+    <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">Certifications</div></div>
     <div class="stat-card"><div class="stat-num">8.37</div><div class="stat-label">CGPA</div></div>
     <div class="stat-card"><div class="stat-num">10L+</div><div class="stat-label">Rows Analyzed</div></div>
   </div>
@@ -245,13 +248,19 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
     <div class="skill-category">
       <p class="skill-cat-title">Data Analysis</p>
       <div class="skill-tags">
-        <span class="skill-tag hot">SQL</span><span class="skill-tag hot">Python</span><span class="skill-tag hot">Excel</span><span class="skill-tag">Pandas</span><span class="skill-tag">Data Cleaning</span><span class="skill-tag">EDA</span>
+        <span class="skill-tag hot">SQL</span><span class="skill-tag hot">Python</span><span class="skill-tag hot">Excel</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Data Cleaning</span><span class="skill-tag">EDA</span>
       </div>
     </div>
     <div class="skill-category">
       <p class="skill-cat-title">Visualization</p>
       <div class="skill-tags">
-        <span class="skill-tag hot">Power BI</span><span class="skill-tag hot">Tableau</span><span class="skill-tag">DAX</span><span class="skill-tag">Power Query</span><span class="skill-tag">Dashboard Design</span>
+        <span class="skill-tag hot">Power BI</span><span class="skill-tag hot">Tableau</span><span class="skill-tag">DAX</span><span class="skill-tag">Power Query</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span><span class="skill-tag">Plotly</span><span class="skill-tag">Dashboard Design</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <p class="skill-cat-title">BA Core</p>
+      <div class="skill-tags">
+        <span class="skill-tag hot">Requirements Gathering</span><span class="skill-tag">Business Requirements Analysis</span><span class="skill-tag">Process Mapping</span><span class="skill-tag">Gap Analysis</span><span class="skill-tag">KPI Definition</span><span class="skill-tag">Stakeholder Reporting</span>
       </div>
     </div>
     <div class="skill-category">
@@ -260,25 +269,65 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
         <span class="skill-tag">Data Visualization</span><span class="skill-tag">Feature Engineering</span><span class="skill-tag">KPI Metrics</span><span class="skill-tag">Business Analysis</span><span class="skill-tag">Storytelling with Data</span>
       </div>
     </div>
+    <div class="skill-category">
+      <p class="skill-cat-title">Soft Skills</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Analytical Thinking</span><span class="skill-tag">Problem Solving</span><span class="skill-tag">Communication</span><span class="skill-tag">Attention to Detail</span><span class="skill-tag">Team Collaboration</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="experience">
   <p class="section-label">// professional experience</p>
   <h2 class="section-title">Work <span>Experience</span></h2>
-  <div class="exp-card">
-    <div class="exp-header">
-      <div>
-        <p class="exp-role">Data Analytics Intern</p>
-        <p class="exp-company">Navodita Infotech &nbsp;|&nbsp; Chennai, India</p>
+  <div class="exp-grid">
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <p class="exp-role">Data Analyst Intern</p>
+          <p class="exp-company">Data X Labs &nbsp;|&nbsp; Remote</p>
+        </div>
+        <span class="exp-date">May 2026 — Jul 2026</span>
       </div>
-      <span class="exp-date">Mar 2026 — Apr 2026</span>
+      <ul class="exp-list">
+        <li>Performed data analysis using SQL, Python, Pandas and Power BI to clean, analyze, and visualize business datasets.</li>
+        <li>Built interactive dashboards, conducted exploratory data analysis (EDA), and developed SQL queries to generate business insights and sales reports.</li>
+        <li>Completed 8 hands-on analytics tasks and a capstone project involving retail sales analysis, trend identification, and data-driven business recommendations.</li>
+      </ul>
     </div>
-    <ul class="exp-list">
-      <li>Developed an interactive Power BI dashboard analyzing Aadhaar enrolment trends using UIDAI datasets.</li>
-      <li>Performed data cleaning, transformation, and KPI analysis using Power Query and DAX.</li>
-      <li>Created visualizations and generated insights on enrolment patterns, documented through dashboards and analytical reports.</li>
-    </ul>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <p class="exp-role">Business Analysis Intern</p>
+          <p class="exp-company">SaiKet Systems &nbsp;|&nbsp; Remote</p>
+        </div>
+        <span class="exp-date">May 2026 — Jun 2026</span>
+      </div>
+      <ul class="exp-list">
+        <li>Elicited business requirements for a 7,000+ record telecom customer churn analysis using Python and Pandas.</li>
+        <li>Performed customer segmentation across tenure, contract type, and payment method to surface churn drivers.</li>
+        <li>Built analytical visualizations (Matplotlib, Seaborn, Plotly) to communicate churn trends to stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <p class="exp-role">Data Analytics Intern</p>
+          <p class="exp-company">Navodita Infotech &nbsp;|&nbsp; Chennai, India</p>
+        </div>
+        <span class="exp-date">Mar 2026 — Apr 2026</span>
+      </div>
+      <ul class="exp-list">
+        <li>Gathered business requirements and defined KPIs for an interactive Power BI dashboard analyzing Aadhaar enrolment trends using UIDAI datasets.</li>
+        <li>Performed gap analysis identifying a 12.1% shortfall against the December 10L enrolment target.</li>
+        <li>Performed data cleaning, transformation, and analysis using Power Query and DAX, ensuring accurate and reliable data for stakeholder reporting.</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
@@ -297,10 +346,11 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
       <div class="project-info">
         <p class="project-num">01 — Jan 2026</p>
         <h3 class="project-title">Aadhaar Enrolment Analytics Dashboard</h3>
-        <p class="project-desc">Built an interactive Power BI dashboard analyzing Aadhaar enrolment trends across states, districts, months, and age groups using official UIDAI open government dataset of 10 lakh+ records.</p>
+        <p class="project-desc">Built an interactive Power BI dashboard analyzing Aadhaar enrolment trends across 49 states and 965 districts using the official UIDAI open government dataset of 10 lakh+ records. Combined 3 CSV files via Power Query Append Queries and built DAX measures to track KPI performance.</p>
         <div class="project-stats">
           <div class="proj-stat"><span class="proj-stat-val">10.06L</span><span class="proj-stat-key">Rows</span></div>
           <div class="proj-stat"><span class="proj-stat-val">49</span><span class="proj-stat-key">States</span></div>
+          <div class="proj-stat"><span class="proj-stat-val">965</span><span class="proj-stat-key">Districts</span></div>
           <div class="proj-stat"><span class="proj-stat-val">−12.1%</span><span class="proj-stat-key">Dec KPI</span></div>
           <div class="proj-stat"><span class="proj-stat-val">65.3%</span><span class="proj-stat-key">Age 0–5</span></div>
         </div>
@@ -321,7 +371,7 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
       <div class="project-info">
         <p class="project-num">02 — Dec 2025</p>
         <h3 class="project-title">Walmart Sales Performance Analysis</h3>
-        <p class="project-desc">Analyzed 1,000+ Walmart sales transactions using SQL for data cleaning, feature engineering, and business analysis across 3 branches, 6 product lines, and customer segments.</p>
+        <p class="project-desc">Analyzed 1,000+ Walmart sales transactions using SQL for data cleaning, feature engineering, and business analysis across 3 branches, 6 product lines, and customer segments. Engineered new columns (time_of_day, day_name, month_name) using CASE, DAYNAME, and MONTHNAME.</p>
         <div class="project-stats">
           <div class="proj-stat"><span class="proj-stat-val">1,000</span><span class="proj-stat-key">Rows</span></div>
           <div class="proj-stat"><span class="proj-stat-val">30+</span><span class="proj-stat-key">SQL Queries</span></div>
@@ -345,7 +395,7 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
       <div class="project-info">
         <p class="project-num">03 — Nov 2025</p>
         <h3 class="project-title">HR Analytics — Employee Attrition Analysis</h3>
-        <p class="project-desc">Analyzed HR data of 1,470 employees to identify attrition patterns by department, age group, gender, education, and job role — enabling targeted HR retention strategies.</p>
+        <p class="project-desc">Analyzed HR data of 1,470 employees to identify attrition patterns by department, age group, gender, education, and job role — enabling targeted HR retention strategies. Built DAX measures using DIVIDE, COUNTROWS, FILTER, and AVERAGE.</p>
         <div class="project-stats">
           <div class="proj-stat"><span class="proj-stat-val">1,470</span><span class="proj-stat-key">Employees</span></div>
           <div class="proj-stat"><span class="proj-stat-val">16.12%</span><span class="proj-stat-key">Attrition</span></div>
@@ -395,6 +445,7 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
       <a href="mailto:arshusheerin05@gmail.com" class="contact-link"><span>✉</span> Email Me</a>
       <a href="https://www.linkedin.com/in/arshusheerin05/" target="_blank" class="contact-link"><span>in</span> LinkedIn</a>
       <a href="https://github.com/arshu-123" target="_blank" class="contact-link"><span>⌥</span> GitHub</a>
+      <a href="https://arshu-123.github.io" target="_blank" class="contact-link"><span>🌐</span> Portfolio</a>
     </div>
     <p class="contact-email">arshusheerin05@gmail.com</p>
     <p style="margin-top:0.4rem;font-family:'DM Mono',monospace;font-size:0.8rem;color:var(--accent);">🔗 github.com/arshu-123</p>
